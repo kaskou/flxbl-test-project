@@ -1,0 +1,4 @@
+# Ignore files that shouldn't be tracked or deployed by Salesforce CLI
+**/jsconfig.json
+**/.eslintrc.json
+**/__tests__/**

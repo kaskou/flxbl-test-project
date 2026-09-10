@@ -1,0 +1,77 @@
+{
+  "packageDirectories": [
+    {
+      "package": "core-crm",
+      "path": "core-crm",
+      "default": false,
+      "versionNumber": "1.0.0.NEXT",
+      "versionName": "core-crm",
+      "versionDescription": "Core CRM data model shared across all domains"
+    },
+    {
+      "package": "frameworks",
+      "path": "frameworks",
+      "default": false,
+      "versionNumber": "1.0.0.NEXT",
+      "versionName": "frameworks",
+      "versionDescription": "Shared technical frameworks (trigger handler, logging)",
+      "dependencies": [
+        {
+          "package": "core-crm",
+          "versionNumber": "1.0.0.LATEST"
+        }
+      ]
+    },
+    {
+      "package": "sales",
+      "path": "sales",
+      "default": false,
+      "versionNumber": "1.0.0.NEXT",
+      "versionName": "sales",
+      "versionDescription": "Sales domain business logic",
+      "dependencies": [
+        {
+          "package": "core-crm",
+          "versionNumber": "1.0.0.LATEST"
+        },
+        {
+          "package": "frameworks",
+          "versionNumber": "1.0.0.LATEST"
+        }
+      ]
+    },
+    {
+      "package": "src-access-mgmt",
+      "path": "src-access-mgmt",
+      "default": false,
+      "versionNumber": "1.0.0.NEXT",
+      "versionName": "src-access-mgmt",
+      "versionDescription": "Profiles, permission sets and permission set groups",
+      "dependencies": [
+        {
+          "package": "core-crm",
+          "versionNumber": "1.0.0.LATEST"
+        },
+        {
+          "package": "frameworks",
+          "versionNumber": "1.0.0.LATEST"
+        },
+        {
+          "package": "sales",
+          "versionNumber": "1.0.0.LATEST"
+        }
+      ]
+    },
+    {
+      "path": "src-env-specific"
+    },
+    {
+      "path": "src-temp",
+      "default": true
+    }
+  ],
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "61.0",
+  "packageAliases": {}
+}
