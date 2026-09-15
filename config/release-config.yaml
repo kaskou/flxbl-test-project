@@ -1,0 +1,10 @@
+releaseName: flxbl-test-project
+excludeAllPackageDependencies: true
+includeOnlyArtifacts:
+  - core-crm
+  - frameworks
+  - sales
+  - src-access-mgmt
+releasedefinitionProperties:
+  skipIfAlreadyInstalled: true
+  promotePackagesBeforeDeploymentToOrg: prod
