@@ -15,4 +15,8 @@ public with sharing class LoggerService {
         }
         System.debug(LoggingLevel.ERROR, '[' + source + '] ' + detail);
     }
+
+    public static void warn(String source, String message) {
+        System.debug(LoggingLevel.WARN, '[' + source + '] ' + message);
+    }
 }
